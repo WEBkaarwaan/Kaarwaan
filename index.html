@@ -6,6 +6,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="home.css">
+  <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
 
 	<!--Bootstrap-->
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,18 +29,18 @@
 <body>
 
 
+  <div class="head_main_div">
+    <div class="inside_head_div">
+        <div class="Kaarwaan_logo"><img src="/img/klogo.png"> </div>
+           <!--this div will hide, screen below 768 with meadia query-->
+        <div class="div_hide"><h6><strong>-A Step For The Welfare Of Another India</strong></h6></div>
+        
+     </div> 	
+  </div>
 
 <!-- Header -->
 
 
-<div class="head_main_div">
-  <div class="inside_head_div">
-    	<div class="Kaarwaan_logo"><img src="/img/klogo.png"> </div>
-    	   <!--this div will hide, screen below 768 with meadia query-->
-    	<div class="div_hide"><h6><strong>-A Step For The Welfare Of Another India</strong></h6></div>
-    	
-   </div> 	
-</div>
 
 <!--nav bar-->
 
@@ -50,7 +54,7 @@
   <ul class="navbar-nav" >
      <!-- Dropdown -->
     <li class="nav-item dropdown Kaarwaan_dropdown">
-      <a class="nav-link dropdown-toggle" style="" href="" id="navbardrop" data-toggle="dropdown">
+      <a class="nav-link dropdown-toggle"  href="" id="navbardrop" data-toggle="dropdown">
         About Us
       </a>
       <div class="dropdown-menu" >
@@ -102,7 +106,8 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="/buy_tshirt/buy_tshirt.html">Buy T-Shirt</a>
-        <a class="dropdown-item" href="/others/contactbook.html">Contact Book</a>
+        <a class="dropdown-item" href="/others/index.html">Contact Book</a>
+        <a class="dropdown-item" href="https://forms.gle/AHyrp3kjAVGEnqfLA">Mark Your Attendance</a>
       </div>
     </li> 
      <a class="navbar-brand" href="/index.html" align="right"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
@@ -203,11 +208,7 @@ html a
 .navbar-nav li a:hover {
   background-color: #436C23;
 }
-.dropdown-menu a:hover
-{
-  
 
-}
 .dropdown:hover .dropdown-menu
 {
   display: block;
@@ -318,11 +319,11 @@ html a
 
     </div>
 
-      <div class="col-sm-6 about_left_col" style="">
+      <div class="col-sm-6 about_left_col">
           <h3><strong>About Kaarwaa.N...</strong></h3>
-          <p style="">Kaarwaa.N... is a non-government orgranisation founded by Jabalpur Engineering College (JEC), Jabalpur students who are committed to work for poor, underprivileged, downtrodden and unaware, with the primary aim to teach students for JNV(Jawahar Navodaya Vidyalaya) Entrance Exam and promote ‘girls education’. Through different activities we try to address different issues like education, health and hygiene, environmental issues, government scheme and plans, livelihood and community issues.
+          <p>Kaarwaa.N... is a non-government orgranisation founded by Jabalpur Engineering College (JEC), Jabalpur students who are committed to work for poor, underprivileged, downtrodden and unaware, with the primary aim to teach students for JNV(Jawahar Navodaya Vidyalaya) Entrance Exam and promote ‘girls education’. Through different activities we try to address different issues like education, health and hygiene, environmental issues, government scheme and plans, livelihood and community issues.
             <!--this div will hide, screen below 768 with meadia query-->
-          <p class="right_description_hide" style="">It is our empathy, the realisation that being citizens of this country, it is our responsibility to take the step for the welfare of another India.</p>
+          <p class="right_description_hide" >It is our empathy, the realisation that being citizens of this country, it is our responsibility to take the step for the welfare of another India.</p>
       </div>
   </div>
 
@@ -489,7 +490,7 @@ html a
 
 
       <div class="col-sm-3 dcl_div_right" style="padding-top: 26px;">
-          <div style=""><h4>Like Us</h4></div>
+          <div ><h4>Like Us</h4></div>
           <p>Follow us on diffrent platform to get updates about events happening around you.</p>
           <a href="https://wwww.facebook.com/kaarwaanjec/" target="_blank">
             <div class="social_links">
@@ -523,7 +524,7 @@ html a
 
  <!--Footer-->
 
-<div class="container-fluid Kaarwaa_footer" style="" >
+<div class="container-fluid Kaarwaa_footer" >
   
   <div class="row" >
     <div class="col-sm-4"  >
@@ -616,9 +617,57 @@ html a
 
 </style>
 
+<div class="popup">
+  <button id="close">&times;</button>
+  <h2>Important Information</h2>
+  <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita distinctio fugiat alias iure qui, commodi minima magni ullam aliquam dignissimos?
+  </p>
+  <a class="pop_a"href="#">Let's Go</a>
+</div>
+<style type="text/css">
 
+.popup{
+    background-color: #0a0909;
+    width: 75%;
+    padding: 30px 40px;
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+     z-index: 1;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.pop_a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+</style>
 <!--Footer End-->
-     
+<script src="script.js"></script>  
  <script>
 
         /* swiper Slider*/
